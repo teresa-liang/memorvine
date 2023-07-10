@@ -11,7 +11,7 @@ function TabBarIcon(props: {
   name: React.ComponentProps<typeof AntDesign>['name'];
   color: string;
 }) {
-  return <AntDesign size={28} style={{ marginBottom: -3 }} {...props} />;
+  return <AntDesign size={22.5} style={{ fontWeight: '600', marginBottom: 0 }} {...props} />;
 }
 
 export default function TabLayout() {
@@ -21,6 +21,9 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarItemStyle: { borderRadius: 10, marginHorizontal: 5, marginVertical: 3 },
+        tabBarStyle: { height: 80 },
+        tabBarLabelStyle: { fontWeight: '600' }
       }}>
       <Tabs.Screen
         name="index"
