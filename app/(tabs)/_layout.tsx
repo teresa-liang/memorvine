@@ -22,7 +22,7 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         tabBarItemStyle: { borderRadius: 10, marginHorizontal: 5, marginVertical: 3 },
-        tabBarStyle: { height: 80 },
+        tabBarStyle: { backgroundColor: Colors[colorScheme ?? 'light'].background2, borderTopWidth: 0, height: 80 },
         tabBarLabelStyle: { fontWeight: '600' }
       }}>
       <Tabs.Screen
